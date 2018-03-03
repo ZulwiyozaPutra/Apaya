@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Apaya View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ApayaViewController" customModule="Apaya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Hfe-Om-Yvp">
+                                <rect key="frame" x="16" y="284.5" width="343" height="98"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hlL-WY-9Fz">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="98"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjh-72-Lyu">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="98"/>
+                                                <color key="backgroundColor" red="0.30818259720000002" green="0.4656511545" blue="0.929458797" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Hjh-72-Lyu" secondAttribute="height" multiplier="3:4" id="uF3-X2-GmV"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nwQ-LD-adY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sva-wd-4uB">
+                                                <rect key="frame" x="90" y="0.0" width="73.5" height="98"/>
+                                                <color key="backgroundColor" red="0.30818259720000002" green="0.4656511545" blue="0.929458797" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9fk-zr-Lhd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heB-TU-xxa">
+                                                <rect key="frame" x="179.5" y="0.0" width="74" height="98"/>
+                                                <color key="backgroundColor" red="0.30818259720000002" green="0.4656511545" blue="0.929458797" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6kX-KQ-mm0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ick-TP-iS6">
+                                                <rect key="frame" x="269.5" y="0.0" width="73.5" height="98"/>
+                                                <color key="backgroundColor" red="0.30818259720000002" green="0.4656511545" blue="0.929458797" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="daj-Cy-eDF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Ick-TP-iS6" firstAttribute="width" secondItem="Ick-TP-iS6" secondAttribute="height" multiplier="3:4" id="Ehl-gU-4sg"/>
+                                            <constraint firstItem="heB-TU-xxa" firstAttribute="width" secondItem="heB-TU-xxa" secondAttribute="height" multiplier="3:4" id="epg-HC-Jbw"/>
+                                            <constraint firstItem="sva-wd-4uB" firstAttribute="width" secondItem="sva-wd-4uB" secondAttribute="height" multiplier="3:4" id="tz3-Lh-Hkg"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DO9-0p-ZWX">
+                                <rect key="frame" x="16" y="630.5" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hfe-Om-Yvp" secondAttribute="trailing" constant="16" id="13L-Cs-LLQ"/>
+                            <constraint firstItem="Hfe-Om-Yvp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="51n-dF-pH3"/>
+                            <constraint firstItem="Hfe-Om-Yvp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7nJ-0H-Nae"/>
+                            <constraint firstItem="Hfe-Om-Yvp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="80U-tx-0BE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DO9-0p-ZWX" secondAttribute="bottom" constant="16" id="AbW-Uj-MML"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DO9-0p-ZWX" secondAttribute="trailing" constant="16" id="XZn-OR-Is5"/>
+                            <constraint firstItem="DO9-0p-ZWX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rv6-U1-wcI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="cardButtons" destination="Hjh-72-Lyu" collectionClass="NSMutableArray" id="xds-ir-zSL"/>
+                        <outletCollection property="cardButtons" destination="sva-wd-4uB" collectionClass="NSMutableArray" id="nxl-23-yGz"/>
+                        <outletCollection property="cardButtons" destination="heB-TU-xxa" collectionClass="NSMutableArray" id="pR7-eJ-nTm"/>
+                        <outletCollection property="cardButtons" destination="Ick-TP-iS6" collectionClass="NSMutableArray" id="Mm3-PY-gP7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
