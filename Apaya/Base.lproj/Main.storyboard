@@ -85,6 +85,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="flipCountLabel" destination="DO9-0p-ZWX" id="lTa-Ko-VDO"/>
                         <outletCollection property="cardButtons" destination="Hjh-72-Lyu" collectionClass="NSMutableArray" id="xds-ir-zSL"/>
                         <outletCollection property="cardButtons" destination="sva-wd-4uB" collectionClass="NSMutableArray" id="nxl-23-yGz"/>
                         <outletCollection property="cardButtons" destination="heB-TU-xxa" collectionClass="NSMutableArray" id="pR7-eJ-nTm"/>
